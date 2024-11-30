@@ -1,0 +1,9 @@
+História do JS
+
+Criada pela Netscape
+
+EcmaScript é a forma padrão do javascript. 
+Programas que usam o javascript: Vue, Electron, React etc.
+
+Livro Java Script: O guia definitivo. 
+Java Script: Guia do programador
