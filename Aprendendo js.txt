@@ -1,0 +1,129 @@
+Variáveis
+
+As variáveis são como vagas em um estacionamento, organizam o terreno com delimitações (armazenamento) e recebem os carros (dados)
+
+var s1 = carro1
+var s2 = carro2 
+
+Um único sinal de = represente em js que, está RECEBENDO. 
+
+var s1 RECEBE carro1
+
+O comando para esvaziar essa vaga é bem simples, apenas colocar a palavra --null--
+
+var s1 = null
+
+Dados como nomes, idade etc 
+
+var nome = "Don"
+
+Pode ser usado "aspas" 'isso' e `crase` . Ambas possuem diferença no uso
+
+Crase é usada pra template string, dentro de uma mesma informação alocada entre crases, usar ${variável} irá guardar os dados recebidos.
+
+Manipulação de dados
+ 
+Algumas funções como por exemplo (window.prompt) ou só prompt, em sua utilização, 
+possui tipo primitivo de string. Para transformar String para Number, usamos o conversor Number.parseInt(funções)
+
+Operadores
+Divididos em:
+Aritmeticos
+Atribuição
+Relacionais
+Lógicos
+Ternário
+
+*Aritmeticos* 
+Possui os seguintes sinais para cálculo.
+
+1 + 1 --> 2 (Number com Number)
+1 - 1 --> 0
+2 * 2 --> 4
+4 / 2 --> 2 
+4 % 2 --> 0 (% é o resto da divisão entre os dois.)
+4 ** 2 -> 16 (4 elevado ^ ao quadrado)
+
+Precedencia [ordem de operação]
+()
+**
+* % /
++ - 
+
+
+*Atribuição simples*
+var a = 4
+var b = a % 2 (b--> 0)
+var c = a + b (c--> 4)
+var d = a * c (2 + b) --> d é 18
+
+Simplificação
+
+var n = 2 
+n = n + 2 (Pode ser simplificado como n+=2)
+n = 4
+
+Assim como:
+n*=2 
+n = 4 
+etc..
+
+Incremento
+
+var x = 6 
+x = x + 1 (pode ser simplificado como x++)
+x = x - 1 (pode ser simplificado como x--)
+
+
+*Relacionais*
+Possui os seguintes sinais:
+< (menor que)
+> (maior que)
+<= (menor ou igual)
+>= (maior ou igual)
+== (igual)
+!= (diferente de)
+
+Os resultados são apenas 2, [true] ou [false]
+
+5 > 2 --- true
+7 <= 8 -- true
+4 != 4 --- false
+
+*Lógico*
+Possui tres sinais.
+
+! --> Negação
+&& --> Conjunção [e]
+|| --> disjunção [ou]
+
+Na Conjunção todos os valores lógicos devem ser true caso não seja, a Conjunção apresentará a informação False.
+     
+     e
+true && true --> true
+true && false --> false
+etc...
+
+Na disjunção, todos os valores lógicos devem ser false, caso tenha alguma valor True, apresentará a informação True.
+
+     ou
+True || false --> True
+false || false --> False.
+
+*Precedencia geral*
+
+() ** / .....
+
+> < >= .....
+
+!
+
+&&
+
+||
+
+
+*Ternário*
+Apresenta 3 partes.
+
+teste ? true : false
