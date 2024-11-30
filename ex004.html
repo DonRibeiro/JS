@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade de letras</title>
+    <style>
+        body{
+            background-color: lightcoral;
+            font: normal 2em Arial;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual o seu nome')
+        
+        document.write(`Olá, ${nome} seu nome tem ${nome.length} letras <br/>`) // Para escrever a variável nome com a quantidade de caracteres, com quebra de linha
+        document.write(`Seu nome em maiusculo é ${nome.toUpperCase()} <br/>`)
+        // Para escrever o nome em letra maiúscula 
+        document.write(`Seu nome em minusculo é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
