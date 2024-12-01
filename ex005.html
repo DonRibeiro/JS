@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+    <style>
+        body{
+            background-color: lightblue;
+            color: white;
+            font: normal 1,5em Arial ;
+        }
+    </style>
+</head>
+<body>
+    <h1> Primeiros passos com o <strong>DOM</strong> em JavaScript</h1>
+    <p> Aqui vai o resultado</p>
+    <p> Olha o <strong>DOM</strong></p>
+    <div id="aqui"> Clique em mim</div> <!-- No lugar de ID, podemos utilizar o class e o name. e alterar getElementsByName/class()!--> 
+    <script>
+        var corpinho= document.body
+        var aidi=document.getElementById('aqui')
+        var s=document.querySelector('div#aqui')
+        var p1 = document.getElementsByTagName('p')[1]//Essa função está selecionando a tag p, e ao lado do parenteses [] serve para selecionar a tag caso tenha mais de um elemento. A primeira do documento será 0.
+        window.document.write('Está dizendo: ' +  p1.innerText) // inner teste é o texto escrito na tag selecionada. Nessa opção a frase é copiada porem sem a formação, o negrito em DOM. 
+        p1.style.color= 'black'
+        corpinho.style.background= 'lightyellow'
+        corpinho.style.color= 'black'
+        document.write(p1.innerHTML)
+        //innerHTML traz o texto e sua formatação.
+        aidi.style.background='yellow'
+        aidi.innerText = 'Estou louco'
+
+    </script>
+    
+</body>
+</html>
