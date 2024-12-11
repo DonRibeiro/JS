@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo eventos com o DOM</title>
+    <style>
+        #caixa{
+            background-color: green;
+            font: normal 1.5em Arial;
+            color: white;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Evento</h1>
+    <div id="caixa"> <!-- Serve para disparar uma ação a ser realizada. No caso a ação será de clique.!-->
+        Testando
+    </div>
+    <script> //Function serve para criar um evento
+    // function ação(parametros)
+
+    // addEventListener server para criar uma ação a ser usada na função. Primeiro o nome do evento, depois o parametro.
+
+    var area = window.document.getElementById('caixa')
+    // Com a variável fora do evento, ela servirá para todas as funções.
+
+    area.addEventListener('click', clicar)
+    area.addEventListener('mouseenter', entrar)
+    area.addEventListener('mouseout', sair)
+
+        function clicar(){
+        area.innerText = 'Clicou!'
+        area.style.backgroundColor = 'blue'   
+    }
+
+    function entrar(){
+    area.innerText = 'Passou'
+    }
+
+    function sair(){
+        area.innerText = 'saiu' 
+    }
+    //Tudo entre chaves se chama 'bloco'
+    </script>
+    
+</body>
+</html>
