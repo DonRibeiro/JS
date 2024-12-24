@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o seu país?</title>
+    <style>
+      body{
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      input{
+        font-weight: bold;
+        padding: 3px;
+      }
+
+      #res{
+        margin: 5px;
+        background-color: bisque;
+        max-width: max-content;
+        padding: 5px;
+
+      }
+    </style>
+</head>
+<body>
+    <h1>Digite o seu país</h1>
+    <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="Confirmar" onclick="confirmar()">
+    <div id="res"></div>
+    <script>
+        function confirmar(){
+            var tn1 = window.document.getElementById('txtn1').value //Atribuindo o valor digitado para a variável
+            var r = window.document.getElementById('res')
+if (tn1 == 'Brasil'){
+res.innerHTML = 'Voce é cria'
+} // Caso o client digite a palavra 'Brasil', exibirá a frase acima
+else{
+    res.innerHTML='Voce não é cria'
+}
+//Caso a palavra seja diferente de 'Brasil', exibir a frase acima. 
+        }
+    </script>
+    
+</body>
+</html>
