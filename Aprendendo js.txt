@@ -127,3 +127,95 @@ false || false --> False.
 Apresenta 3 partes.
 
 teste ? true : false
+
+*Evento*
+
+Um evento em java script é uma ação realizada pelo client que gera uma reação/resposta da pagina. Uma interatividade após o clique, o passar ou saída do mouse etc.
+
+Sua estrutura é:
+function (ação) {
+    BLOCO
+}
+
+Entre parenteses será utilizado a ação descrita no html ou pelo próprio script.
+Entre chaves será designado o evento.
+
+*Ação*
+
+Pode ser inserida dentro de uma tag como por exemplo:
+<input type="button" onclick="clicar()">
+
+O onclick é um parametro que está ligado aos eventos em js, nesse caso determinamos uma ação de clicar em um botão.
+Na function colocaremos do seguinte modo
+
+function clicar(){
+}
+
+*Condição*
+
+Na linguagem de programação nós temos as condições, situações que acontecem Se verdadeiras e, Se falsas mostram outro resultado. Esse 'Se' na linguagem de programação se escreve -if- e 'Se não' se escreve -else-
+ 
+ Sua estrutura é:
+ if (condição) {
+ 
+ bloco 1
+ 
+ } else {
+ 
+ bloco 2
+ }
+ 
+ Temos dois tipos:
+  Simples e composta
+  
+*Condição Simples*
+
+Essa condição apresenta apenas o -if-
+Não há um resultado caso a sentença seja falsa.
+
+var num = 5
+if (num > 4){
+console.log ('Acima que a média 4')
+}
+
+*Condição composta*
+
+Apresenta um resultado para caso a condição seja verdadeira e um resultado para caso a condição seja falsa.
+
+var num = 5
+if (num > 4){
+console.log ('Maior que a média 4')
+} else {
+console.log ('Menor que a média 4')
+
+*Condição aninhada*
+
+Nas condições é possível adicionar mais alternativas dentro de uma alternativa. Uma condição dentro da condição.
+
+if (condição1){
+     BLOCO1
+} else{
+
+     if(condição2){
+          BLOCO2
+     } else{
+          BLOCO3
+     }
+}
+
+*Condição Multipla*
+
+Possibilita registrar outros valores, valores fixos.
+OBS: BREAK é obrigatório no final de cada CASE.
+
+switch(expressão) {
+     case valor 1:
+break 
+     case valor 2:
+break
+     case valor 3:
+break
+     default
+break
+
+}
