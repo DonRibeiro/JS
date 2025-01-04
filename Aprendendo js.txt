@@ -219,3 +219,7 @@ break
 break
 
 }
+
+Como informar as horas atuais do sistema
+var agora = new Date()
+var hora = agora.getHours()
